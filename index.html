@@ -11,6 +11,8 @@
     #timer { font-size: 2rem; font-weight: 700; letter-spacing: 1px; }
     .sub { color: #555; margin-top: 10px; }
     .info-box { margin-top: 16px; padding: 12px 16px; background: #f9f9f9; border-radius: 8px; color: #333; line-height: 1.5; }
+    .image-gallery { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; justify-content: center; }
+    .image-gallery img { width: 100%; max-width: 150px; height: auto; border-radius: 8px; object-fit: cover; }
   </style>
 </head>
 <body>
@@ -22,6 +24,17 @@
     <!-- Secciones de texto editables -->
     <div class="info-box">Destino: Perú – Cusco, Lima y más</div>
     <div class="info-box">Faltan pocos días para esta aventura 🇵🇪</div>
+
+    <!-- Galería de imágenes -->
+    <!-- Para cambiar las imágenes: -->
+    <!-- 1. Guardá tus imágenes en la carpeta 'images/' -->
+    <!-- 2. Reemplazá 'peru1.jpg', 'peru2.jpg', 'peru3.jpg' con los nombres de tus archivos -->
+    <!-- 3. Podés agregar más imágenes copiando la línea <img> y cambiando el nombre del archivo -->
+    <div class="image-gallery">
+      <img src="images/peru1.jpg" alt="Imagen 1 de Perú" />
+      <img src="images/peru2.jpg" alt="Imagen 2 de Perú" />
+      <img src="images/peru3.jpg" alt="Imagen 3 de Perú" />
+    </div>
   </div>
 
   <script>
