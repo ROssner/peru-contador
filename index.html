@@ -20,9 +20,16 @@
   </div>
 
   <script>
-    // Cambiá esto por la fecha/hora del viaje (Buenos Aires). Formato: YYYY-MM-DDTHH:MM:SS-03:00
-    const tripDate = new Date("2026-02-15T21:00:00-03:00");
+    // ============================================
+    // CONFIGURACIÓN: Fecha y hora del viaje
+    // ============================================
+    // Formato: "YYYY-MM-DDTHH:MM:SS-03:00"
+    // Ejemplo: "2026-02-15T21:00:00-03:00" = 15 de febrero 2026, 21:00 hs (Buenos Aires)
+    // Para cambiar, editá la fecha/hora manteniendo el formato y zona horaria (-03:00)
+    const TRIP_DATE = "2026-02-15T21:00:00-03:00";
+    // ============================================
 
+    const tripDate = new Date(TRIP_DATE);
     const timerEl = document.getElementById("timer");
     const dateLabelEl = document.getElementById("dateLabel");
     dateLabelEl.textContent = "Fecha: " + tripDate.toLocaleString("es-AR");
