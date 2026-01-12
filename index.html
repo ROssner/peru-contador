@@ -14,22 +14,22 @@
 </head>
 <body>
   <div class="card">
-    <h1>Falta para mi cumple 🎉</h1>
+    <h1>Cuenta regresiva para mi viaje a Perú 🇵🇪✈️</h1>
     <div id="timer">Cargando…</div>
     <div class="sub" id="dateLabel"></div>
   </div>
 
   <script>
-    // Cambiá esto por tu fecha/hora local (Buenos Aires). Formato: YYYY-MM-DDTHH:MM:SS-03:00
-    const target = new Date("2026-02-15T21:00:00-03:00");
+    // Cambiá esto por la fecha/hora del viaje (Buenos Aires). Formato: YYYY-MM-DDTHH:MM:SS-03:00
+    const tripDate = new Date("2026-02-15T21:00:00-03:00");
 
     const timerEl = document.getElementById("timer");
     const dateLabelEl = document.getElementById("dateLabel");
-    dateLabelEl.textContent = "Fecha: " + target.toLocaleString("es-AR");
+    dateLabelEl.textContent = "Fecha: " + tripDate.toLocaleString("es-AR");
 
     function tick() {
       const now = new Date();
-      const diff = target - now;
+      const diff = tripDate - now;
 
       if (diff <= 0) {
         timerEl.textContent = "¡Es hoy! 🥳";
